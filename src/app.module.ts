@@ -4,6 +4,17 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 
 // Importa los módulos de cada entidad
 import { UsuarioModule } from './entidades/usuario/usuario.module';
+import { MensajeModule} from "src/entidades/mensaje/mensaje.module";
+import { ChatModule } from './entidades/chat/chat.module';
+import {VideollamadaModule} from "src/entidades/videollamada/videollamada.module";
+import { PreguntaModule } from "src/entidades/pregunta/pregunta.module";
+import { RespuestaModule } from "src/entidades/respuesta/respuesta.module";
+import { InteraccionARModule} from "src/entidades/interaccion_ar/interaccion_ar.module";
+import { GestionUsuarioModule } from  "src/entidades/gestion_usuario/gestion_usuario.module";
+import { NotificacionModule } from  "src/entidades/notificacion/notificacion.module";
+import { PerfilUsuarioModule } from  "src/entidades/perfil_usuario/perfil_usuario.module";
+import { SesionModule } from  "src/entidades/sesion/sesion.module";
+ import { SignoModule } from  "src/entidades/signo/signo.module";
 
 
 // Importa las entidades
@@ -18,7 +29,7 @@ import { Respuesta } from './entidades/respuesta/respuesta.entity';
 import { InteraccionAR } from './entidades/interaccion_ar/interaccion_ar.entity';
 import { GestionUsuario } from './entidades/gestion_usuario/gestion_usuario.entity';
 import { Notificacion } from './entidades/notificacion/notificacion.entity';
-import { Gesto } from './entidades/signo/signo.entity';
+import { Signo } from './entidades/signo/signo.entity';
 
 @Module({
   imports: [
@@ -44,7 +55,7 @@ import { Gesto } from './entidades/signo/signo.entity';
           InteraccionAR,
           GestionUsuario,
           Notificacion,
-          Gesto,
+          Signo,
         ],
         synchronize: true,
       }),
@@ -52,6 +63,18 @@ import { Gesto } from './entidades/signo/signo.entity';
     }),
     // Importar módulos de cada entidad
     UsuarioModule,
+      VideollamadaModule,
+      MensajeModule,
+      ChatModule,
+      PreguntaModule,
+      RespuestaModule,
+      InteraccionARModule,
+      PerfilUsuarioModule,
+      NotificacionModule,
+      SignoModule,
+      GestionUsuarioModule,
+      SesionModule
+
   ],
 })
 export class AppModule {}

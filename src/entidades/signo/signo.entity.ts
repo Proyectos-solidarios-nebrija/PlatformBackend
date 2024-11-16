@@ -1,12 +1,12 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('gestos')
-export class Gesto {
+@Entity('signos')
+export class Signo {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column({ length: 50 }) // tipo varchar
-  nombre_gesto: string;
+  nombre_signo: string;
 
   @Column({ type: 'text' }) // tipo text sin length
   descripcion: string;
