@@ -15,6 +15,8 @@ import { NotificacionModule } from  "src/entidades/notificacion/notificacion.mod
 import { PerfilUsuarioModule } from  "src/entidades/perfil_usuario/perfil_usuario.module";
 import { SesionModule } from  "src/entidades/sesion/sesion.module";
  import { SignoModule } from  "src/entidades/signo/signo.module";
+import { AuthModule } from './auth/auth.module';
+
 
 
 // Importa las entidades
@@ -73,8 +75,8 @@ import { Signo } from './entidades/signo/signo.entity';
       NotificacionModule,
       SignoModule,
       GestionUsuarioModule,
-      SesionModule
-
+      SesionModule,
+      AuthModule,
   ],
 })
 export class AppModule {}

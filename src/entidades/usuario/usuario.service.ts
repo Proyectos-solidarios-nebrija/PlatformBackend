@@ -30,10 +30,23 @@ export class UsuarioService {
     return usuario;
   }
 
+
+
+  async findByEmail(correo: string): Promise<Usuario> {
+    const usuario = await this.usuarioRepository.findOne({ where: { correo } });
+    if (!usuario) {
+      throw new NotFoundException(`Usuario con email ${correo} no encontrado`);
+    }
+    return usuario;
+  }
+
+
+
   // Actualizar un usuario
   async update(id: number, updateData: Partial<Usuario>): Promise<Usuario> {
-    await this.usuarioRepository.update(id, updateData);
-    return this.findOne(id); // Retorna el usuario actualizado
+    const user = await this.findOne(id); // Confirma que el usuario existe
+    Object.assign(user, updateData); // Actualiza los campos proporcionados
+    return this.usuarioRepository.save(user);
   }
 
   // Eliminar un usuario
