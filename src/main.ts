@@ -12,8 +12,7 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization'], // Los headers a utilizar, en este caso headers de autorización
     credentials: true, // Habilitamos el envio de credenciales
   });
-
-
+  
   // Agrega prefijo global "api"
   app.setGlobalPrefix('api', {
     exclude: [{ path: 'auth/login', method: RequestMethod.POST }],
