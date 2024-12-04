@@ -18,7 +18,7 @@ async function bootstrap() {
     exclude: [{ path: 'auth/login', method: RequestMethod.POST }],
   });
 
-  // Usa validaciones globales
+  // Usa validaciones globales, valida automáticamente los datos recibidos
   app.useGlobalPipes(new ValidationPipe());
 
   // Configuración de Swagger
