@@ -4,27 +4,27 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 
 // Importa los módulos de cada entidad
 import { UsuarioModule } from './entidades/usuario/usuario.module';
-import { MensajeModule} from "src/entidades/mensaje/mensaje.module";
+import { MensajeModule } from 'src/entidades/mensaje/mensaje.module';
 import { ChatModule } from './entidades/chat/chat.module';
-import {VideollamadaModule} from "src/entidades/videollamada/videollamada.module";
-import { PreguntaModule } from "src/entidades/pregunta/pregunta.module";
-import { RespuestaModule } from "src/entidades/respuesta/respuesta.module";
-import { InteraccionARModule} from "src/entidades/interaccion_ar/interaccion_ar.module";
-import { GestionUsuarioModule } from  "src/entidades/gestion_usuario/gestion_usuario.module";
-import { NotificacionModule } from  "src/entidades/notificacion/notificacion.module";
-import { PerfilUsuarioModule } from  "src/entidades/perfil_usuario/perfil_usuario.module";
-import { SesionModule } from  "src/entidades/sesion/sesion.module";
- import { SignoModule } from  "src/entidades/signo/signo.module";
+import { VideollamadaModule } from 'src/entidades/videollamada/videollamada.module';
+import { PreguntaModule } from 'src/entidades/pregunta/pregunta.module';
+import { RespuestaModule } from 'src/entidades/respuesta/respuesta.module';
+import { InteraccionARModule } from 'src/entidades/interaccion_ar/interaccion_ar.module';
+import { GestionUsuarioModule } from 'src/entidades/gestion_usuario/gestion_usuario.module';
+import { NotificacionModule } from 'src/entidades/notificacion/notificacion.module';
+import { PerfilUsuarioModule } from 'src/entidades/perfil_usuario/perfil_usuario.module';
+import { SesionModule } from 'src/entidades/sesion/sesion.module';
+import { SignoModule } from 'src/entidades/signo/signo.module';
 import { AuthModule } from './auth/auth.module';
-
-
+import { CategoriaModule } from 'src/entidades/categoria/categoria.module';
+import { HiloModule } from 'src/entidades/hilo/hilo.module';
 
 // Importa las entidades
 import { Usuario } from './entidades/usuario/usuario.entity';
 import { PerfilUsuario } from './entidades/perfil_usuario/perfil_usuario.entity';
 import { Sesion } from './entidades/sesion/sesion.entity';
 import { Chat } from './entidades/chat/chat.entity';
-import { Mensaje } from "./entidades/mensaje/mensaje.entity";
+import { Mensaje } from './entidades/mensaje/mensaje.entity';
 import { Videollamada } from './entidades/videollamada/videollamada.entity';
 import { Pregunta } from './entidades/pregunta/pregunta.entity';
 import { Respuesta } from './entidades/respuesta/respuesta.entity';
@@ -32,6 +32,8 @@ import { InteraccionAR } from './entidades/interaccion_ar/interaccion_ar.entity'
 import { GestionUsuario } from './entidades/gestion_usuario/gestion_usuario.entity';
 import { Notificacion } from './entidades/notificacion/notificacion.entity';
 import { Signo } from './entidades/signo/signo.entity';
+import { Categoria } from 'src/entidades/categoria/categoria.entity';
+import { Hilo } from 'src/entidades/hilo/hilo.entity';
 
 @Module({
   imports: [
@@ -58,6 +60,8 @@ import { Signo } from './entidades/signo/signo.entity';
           GestionUsuario,
           Notificacion,
           Signo,
+          Categoria,
+          Hilo,
         ],
         synchronize: true,
       }),
@@ -65,18 +69,20 @@ import { Signo } from './entidades/signo/signo.entity';
     }),
     // Importar módulos de cada entidad
     UsuarioModule,
-      VideollamadaModule,
-      MensajeModule,
-      ChatModule,
-      PreguntaModule,
-      RespuestaModule,
-      InteraccionARModule,
-      PerfilUsuarioModule,
-      NotificacionModule,
-      SignoModule,
-      GestionUsuarioModule,
-      SesionModule,
-      AuthModule,
+    VideollamadaModule,
+    MensajeModule,
+    ChatModule,
+    PreguntaModule,
+    RespuestaModule,
+    InteraccionARModule,
+    PerfilUsuarioModule,
+    NotificacionModule,
+    SignoModule,
+    CategoriaModule,
+    HiloModule,
+    GestionUsuarioModule,
+    SesionModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
