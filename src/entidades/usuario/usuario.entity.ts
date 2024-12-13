@@ -47,6 +47,9 @@ export class Usuario {
   @Column({ type: 'json', nullable: true })
   preferencias: object;
 
+  @Column({ type: 'json', nullable: true })
+  notificacionPreferencias: { email: boolean; push: boolean; sms: boolean };
+
   @Column({ length: 20 }) // tipo varchar
   estado: string;
 
@@ -61,7 +64,7 @@ export class Usuario {
 
   @OneToMany(() => Chat, (chat) => chat.receptor)
   chatsRecibidos: Chat[];
-  @OneToMany(() => Mensaje, mensaje => mensaje.emisor) // Relación bidireccional
+  @OneToMany(() => Mensaje, (mensaje) => mensaje.emisor) // Relación bidireccional
   mensajes: Mensaje[];
 
   @OneToMany(() => Videollamada, (videollamada) => videollamada.usuario)
