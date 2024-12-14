@@ -47,7 +47,7 @@ export class Usuario {
   @Column({ type: 'json', nullable: true })
   preferencias: object;
 
-  @Column({ type: 'json', nullable: true })
+  @Column({ type: 'json', default: { email: true, push: true, sms: true } }) // change to false on default
   notificacionPreferencias: { email: boolean; push: boolean; sms: boolean };
 
   @Column({ length: 20 }) // tipo varchar
