@@ -17,7 +17,7 @@ export class Notificacion {
   usuario: Usuario;
 
   @Column({ length: 50 }) // tipo varchar
-  tipo_notificacion: 'QUESTION_ANSWERED' | 'QUESTION_DELETED';
+  tipo_notificacion: 'QUESTION_ANSWERED' | 'QUESTION_DELETED'; // annadir nuevas opciones de tipo notificacion aqui
 
   @Column({ type: 'text' }) // tipo text sin length
   contenido: string;
