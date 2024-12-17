@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { SesionService } from './sesion.service';
-import { Sesion } from './sesion.entity';
+import { SesionService } from '@sesion/sesion.service';
+import { Sesion } from '@sesion/sesion.entity';
 
 @Controller('sesiones')
 export class SesionController {

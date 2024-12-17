@@ -5,15 +5,15 @@ import {
   OneToOne,
   OneToMany,
 } from 'typeorm';
-import { PerfilUsuario } from '../perfil_usuario/perfil_usuario.entity';
-import { Sesion } from '../sesion/sesion.entity';
-import { Chat } from '../chat/chat.entity';
-import { Mensaje } from '../mensaje/mensaje.entity';
-import { Videollamada } from '../videollamada/videollamada.entity';
-import { Pregunta } from '../pregunta/pregunta.entity';
-import { Respuesta } from '../respuesta/respuesta.entity';
-import { InteraccionAR } from '../interaccion_ar/interaccion_ar.entity';
-import { Notificacion } from '../notificacion/notificacion.entity';
+import { PerfilUsuario } from '@perfil_usuario/perfil_usuario.entity';
+import { Sesion } from '@sesion/sesion.entity';
+import { Chat } from '@chat/chat.entity';
+import { Mensaje } from '@mensaje/mensaje.entity';
+import { Videollamada } from '@videollamada/videollamada.entity';
+import { Pregunta } from '@pregunta/pregunta.entity';
+import { Respuesta } from '@respuesta/respuesta.entity';
+import { InteraccionAR } from '@interaccion_ar/interaccion_ar.entity';
+import { Notificacion } from '@notificacion/notificacion.entity';
 
 @Entity('usuarios')
 export class Usuario {

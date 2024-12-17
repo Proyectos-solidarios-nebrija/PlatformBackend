@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { HiloService } from './hilo.service';
-import { CategoriaService } from '../categoria/categoria.service';
+import { HiloService } from '@hilo/hilo.service';
+import { CategoriaService } from '@categoria/categoria.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Hilo } from './hilo.entity';
+import { Hilo } from '@hilo/hilo.entity';
 import { Repository } from 'typeorm';
 
 describe('HiloService', () => {

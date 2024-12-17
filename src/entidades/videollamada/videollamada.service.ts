@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Videollamada } from './videollamada.entity';
+import { Videollamada } from '@videollamada/videollamada.entity';
 
 @Injectable()
 export class VideollamadaService {

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Signo } from './signo.entity';
+import { Signo } from '@signo/signo.entity';
 
 @Injectable()
 export class SignoService {

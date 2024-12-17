@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PerfilUsuarioService } from './perfil_usuario.service';
+import { PerfilUsuarioService } from '@perfil_usuario/perfil_usuario.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { PerfilUsuario } from './perfil_usuario.entity';
+import { PerfilUsuario } from '@perfil_usuario/perfil_usuario.entity';
 import { Repository } from 'typeorm';
-import { Usuario } from '../usuario/usuario.entity';
+import { Usuario } from '@usuario/usuario.entity';
 
 describe('PerfilUsuarioService', () => {
     let service: PerfilUsuarioService;

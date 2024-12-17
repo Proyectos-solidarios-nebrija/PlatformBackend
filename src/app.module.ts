@@ -3,37 +3,37 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
 // Importa los módulos de cada entidad
-import { UsuarioModule } from './entidades/usuario/usuario.module';
-import { MensajeModule } from 'src/entidades/mensaje/mensaje.module';
-import { ChatModule } from './entidades/chat/chat.module';
-import { VideollamadaModule } from 'src/entidades/videollamada/videollamada.module';
-import { PreguntaModule } from 'src/entidades/pregunta/pregunta.module';
-import { RespuestaModule } from 'src/entidades/respuesta/respuesta.module';
-import { InteraccionARModule } from 'src/entidades/interaccion_ar/interaccion_ar.module';
-import { GestionUsuarioModule } from 'src/entidades/gestion_usuario/gestion_usuario.module';
-import { NotificacionModule } from 'src/entidades/notificacion/notificacion.module';
-import { PerfilUsuarioModule } from 'src/entidades/perfil_usuario/perfil_usuario.module';
-import { SesionModule } from 'src/entidades/sesion/sesion.module';
-import { SignoModule } from 'src/entidades/signo/signo.module';
-import { AuthModule } from './auth/auth.module';
-import { CategoriaModule } from 'src/entidades/categoria/categoria.module';
-import { HiloModule } from 'src/entidades/hilo/hilo.module';
+import { UsuarioModule } from '@usuario/usuario.module';
+import { MensajeModule } from '@mensaje/mensaje.module';
+import { ChatModule } from '@chat/chat.module';
+import { VideollamadaModule } from '@videollamada/videollamada.module';
+import { PreguntaModule } from '@pregunta/pregunta.module';
+import { RespuestaModule } from '@respuesta/respuesta.module';
+import { InteraccionARModule } from '@interaccion_ar/interaccion_ar.module';
+import { GestionUsuarioModule } from '@gestion_usuario/gestion_usuario.module';
+import { NotificacionModule } from '@notificacion/notificacion.module';
+import { PerfilUsuarioModule } from '@perfil_usuario/perfil_usuario.module';
+import { SesionModule } from '@sesion/sesion.module';
+import { SignoModule } from '@signo/signo.module';
+import { AuthModule } from '@auth/auth.module';
+import { CategoriaModule } from '@categoria/categoria.module';
+import { HiloModule } from '@hilo/hilo.module';
 
 // Importa las entidades
-import { Usuario } from './entidades/usuario/usuario.entity';
-import { PerfilUsuario } from './entidades/perfil_usuario/perfil_usuario.entity';
-import { Sesion } from './entidades/sesion/sesion.entity';
-import { Chat } from './entidades/chat/chat.entity';
-import { Mensaje } from './entidades/mensaje/mensaje.entity';
-import { Videollamada } from './entidades/videollamada/videollamada.entity';
-import { Pregunta } from './entidades/pregunta/pregunta.entity';
-import { Respuesta } from './entidades/respuesta/respuesta.entity';
-import { InteraccionAR } from './entidades/interaccion_ar/interaccion_ar.entity';
-import { GestionUsuario } from './entidades/gestion_usuario/gestion_usuario.entity';
-import { Notificacion } from './entidades/notificacion/notificacion.entity';
-import { Signo } from './entidades/signo/signo.entity';
-import { Categoria } from 'src/entidades/categoria/categoria.entity';
-import { Hilo } from 'src/entidades/hilo/hilo.entity';
+import { Usuario } from '@usuario/usuario.entity';
+import { PerfilUsuario } from '@perfil_usuario/perfil_usuario.entity';
+import { Sesion } from '@sesion/sesion.entity';
+import { Chat } from '@chat/chat.entity';
+import { Mensaje } from '@mensaje/mensaje.entity';
+import { Videollamada } from '@videollamada/videollamada.entity';
+import { Pregunta } from '@pregunta/pregunta.entity';
+import { Respuesta } from '@respuesta/respuesta.entity';
+import { InteraccionAR } from '@interaccion_ar/interaccion_ar.entity';
+import { GestionUsuario } from '@gestion_usuario/gestion_usuario.entity';
+import { Notificacion } from '@notificacion/notificacion.entity';
+import { Signo } from '@signo/signo.entity';
+import { Categoria } from '@categoria/categoria.entity';
+import { Hilo } from '@hilo/hilo.entity';
 
 @Module({
   imports: [

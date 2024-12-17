@@ -1,10 +1,10 @@
 import { Controller, Get, Post, Patch, Delete, Param, Body, UseGuards, Req } from '@nestjs/common';
-import { UsuarioService } from './usuario.service';
-import { Usuario } from './usuario.entity';
-import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { UsuarioService } from '@usuario/usuario.service';
+import { Usuario } from '@usuario/usuario.entity';
+import { JwtAuthGuard } from '@auth/jwt-auth.guard';
 import { ApiBearerAuth, ApiTags, ApiOperation, ApiBody, ApiParam } from '@nestjs/swagger';
 import { Put } from '@nestjs/common';
-import { UpdateProfileDto } from './usuario.dto';
+import { UpdateProfileDto } from '@usuario/usuario.dto';
 
 @ApiTags('usuarios') // Agrupa los endpoints bajo el grupo 'usuarios' en Swagger
 @Controller('usuarios')

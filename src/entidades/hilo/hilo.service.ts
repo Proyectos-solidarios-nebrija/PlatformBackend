@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Hilo } from './hilo.entity';
-import { CategoriaService } from '../categoria/categoria.service';
+import { Hilo } from '@hilo/hilo.entity';
+import { CategoriaService } from '@categoria/categoria.service';
 
 @Injectable()
 export class HiloService {

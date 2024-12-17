@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ChatService } from './chat.service';
+import { ChatService } from '@chat/chat.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Chat } from './chat.entity';
+import { Chat } from '@chat/chat.entity';
 import { Repository } from 'typeorm';
 
 describe('ChatService', () => {

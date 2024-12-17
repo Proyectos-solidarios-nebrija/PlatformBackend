@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { InteraccionARService } from './interaccion_ar.service';
-import { InteraccionAR } from './interaccion_ar.entity';
+import { InteraccionARService } from '@interaccion_ar/interaccion_ar.service';
+import { InteraccionAR } from '@interaccion_ar/interaccion_ar.entity';
 
 @Controller('interacciones_ar')
 export class InteraccionARController {

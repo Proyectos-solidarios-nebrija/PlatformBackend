@@ -1,5 +1,5 @@
 import { Entity, PrimaryColumn, ManyToOne, JoinColumn, Column } from 'typeorm';
-import { Usuario } from '../usuario/usuario.entity';
+import { Usuario } from '@usuario/usuario.entity';
 
 @Entity('gestion_usuarios')
 export class GestionUsuario {

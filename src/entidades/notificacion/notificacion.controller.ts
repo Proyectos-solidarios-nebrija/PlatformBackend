@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { NotificacionService } from './notificacion.service';
-import { Notificacion } from './notificacion.entity';
+import { NotificacionService } from '@notificacion/notificacion.service';
+import { Notificacion } from '@notificacion/notificacion.entity';
 
 @Controller('notificaciones')
 export class NotificacionController {

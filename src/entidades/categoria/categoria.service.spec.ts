@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CategoriaService } from './categoria.service';
+import { CategoriaService } from '@categoria/categoria.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Categoria } from './categoria.entity';
+import { Categoria } from '@categoria/categoria.entity';
 import { Repository } from 'typeorm';
 import { NotFoundException } from '@nestjs/common';
 

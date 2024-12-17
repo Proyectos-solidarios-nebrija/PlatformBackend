@@ -6,8 +6,8 @@ import {
   OneToMany,
   JoinColumn,
 } from 'typeorm';
-import { Usuario } from '../usuario/usuario.entity';
-import { Respuesta } from '../respuesta/respuesta.entity';
+import { Usuario } from '@usuario/usuario.entity';
+import { Respuesta } from '@respuesta/respuesta.entity';
 
 @Entity('preguntas')
 export class Pregunta {

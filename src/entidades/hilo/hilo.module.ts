@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { HiloService } from './hilo.service';
-import { HiloController } from './hilo.controller';
+import { HiloService } from '@hilo/hilo.service';
+import { HiloController } from '@hilo/hilo.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Hilo } from './hilo.entity';
-import { CategoriaModule } from '../categoria/categoria.module'; // Importa CategoriaModule
+import { Hilo } from '@hilo/hilo.entity';
+import { CategoriaModule } from '@categoria/categoria.module'; // Importa CategoriaModule
 
 @Module({
   imports: [

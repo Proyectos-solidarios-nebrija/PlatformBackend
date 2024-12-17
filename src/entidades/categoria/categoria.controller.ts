@@ -12,8 +12,8 @@ import {
   BadRequestException, // Utilizado en errores del cliente, como solicitudes malformadas (HTTP400).
   NotFoundException, // Utilizado en errores de recursos inexistentes.
 } from '@nestjs/common';
-import { CategoriaService } from './categoria.service';
-import { Categoria } from './categoria.entity';
+import { CategoriaService } from '@categoria/categoria.service';
+import { Categoria } from '@categoria/categoria.entity';
 
 @Controller('categorias')
 export class CategoriaController {

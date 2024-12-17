@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { VideollamadaService } from './videollamada.service';
+import { VideollamadaService } from '@videollamada/videollamada.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Videollamada } from './videollamada.entity';
+import { Videollamada } from '@videollamada/videollamada.entity';
 import { Repository } from 'typeorm';
 
 describe('VideollamadaService', () => {

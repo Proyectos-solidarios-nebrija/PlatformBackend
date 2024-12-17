@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { InteraccionAR } from './interaccion_ar.entity';
+import { InteraccionAR } from '@interaccion_ar/interaccion_ar.entity';
 
 @Injectable()
 export class InteraccionARService {

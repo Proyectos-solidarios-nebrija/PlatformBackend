@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Param, Body, Delete } from '@nestjs/common';
-import { VideollamadaService } from './videollamada.service';
-import { Videollamada } from './videollamada.entity';
+import { VideollamadaService } from '@videollamada/videollamada.service';
+import { Videollamada } from '@videollamada/videollamada.entity';
 
 @Controller('videollamadas')
 export class VideollamadaController {

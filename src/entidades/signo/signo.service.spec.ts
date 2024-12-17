@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SignoService } from './signo.service';
+import { SignoService } from '@signo/signo.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Signo } from './signo.entity';
+import { Signo } from '@signo/signo.entity';
 import { Repository } from 'typeorm';
 
 describe('SignoService', () => {

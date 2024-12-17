@@ -8,8 +8,8 @@ import {
   Body,
   Query,
 } from '@nestjs/common';
-import { HiloService } from './hilo.service';
-import { Hilo } from './hilo.entity';
+import { HiloService } from '@hilo/hilo.service';
+import { Hilo } from '@hilo/hilo.entity';
 
 @Controller('hilos')
 export class HiloController {

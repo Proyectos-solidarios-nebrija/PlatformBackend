@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Delete, Body, Param } from '@nestjs/common';
-import { GestionUsuarioService } from './gestion_usuario.service';
-import { GestionUsuario } from './gestion_usuario.entity';
+import { GestionUsuarioService } from '@gestion_usuario/gestion_usuario.service';
+import { GestionUsuario } from '@gestion_usuario/gestion_usuario.entity';
 
 @Controller('gestion_usuarios')
 export class GestionUsuarioController {

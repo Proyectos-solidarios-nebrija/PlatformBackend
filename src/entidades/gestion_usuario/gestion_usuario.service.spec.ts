@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { GestionUsuarioService } from './gestion_usuario.service';
+import { GestionUsuarioService } from '@gestion_usuario/gestion_usuario.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { GestionUsuario } from './gestion_usuario.entity';
+import { GestionUsuario } from '@gestion_usuario/gestion_usuario.entity';
 import { Repository } from 'typeorm';
 
 describe('GestionUsuarioService', () => {

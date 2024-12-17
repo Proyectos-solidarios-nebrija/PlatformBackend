@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { MensajeService } from './mensaje.service';
-import { Mensaje } from './mensaje.entity';
+import { MensajeService } from '@mensaje/mensaje.service';
+import { Mensaje } from '@mensaje/mensaje.entity';
 
 @Controller('mensajes')
 export class MensajeController {

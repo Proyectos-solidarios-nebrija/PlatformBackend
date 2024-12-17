@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Categoria } from './categoria.entity';
+import { Categoria } from '@categoria/categoria.entity';
 
 @Injectable()
 export class CategoriaService {

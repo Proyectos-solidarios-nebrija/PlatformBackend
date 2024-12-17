@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { SignoService } from './signo.service';
-import { Signo } from './signo.entity';
+import { SignoService } from '@signo/signo.service';
+import { Signo } from '@signo/signo.entity';
 
 @Controller('signos')
 export class SignoController {

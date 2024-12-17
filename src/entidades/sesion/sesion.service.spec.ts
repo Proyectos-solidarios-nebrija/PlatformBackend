@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SesionService } from './sesion.service';
+import { SesionService } from '@sesion/sesion.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Sesion } from './sesion.entity';
+import { Sesion } from '@sesion/sesion.entity';
 import { Repository } from 'typeorm';
 
 describe('SesionService', () => {

@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { PerfilUsuarioService } from './perfil_usuario.service';
-import { PerfilUsuario } from './perfil_usuario.entity';
+import { PerfilUsuarioService } from '@perfil_usuario/perfil_usuario.service';
+import { PerfilUsuario } from '@perfil_usuario/perfil_usuario.entity';
 
 @Controller('perfil_usuario')
 export class PerfilUsuarioController {

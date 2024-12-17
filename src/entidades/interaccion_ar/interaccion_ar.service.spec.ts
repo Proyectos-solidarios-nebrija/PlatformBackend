@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { InteraccionARService } from './interaccion_ar.service';
+import { InteraccionARService } from '@interaccion_ar/interaccion_ar.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { InteraccionAR } from './interaccion_ar.entity';
+import { InteraccionAR } from '@interaccion_ar/interaccion_ar.entity';
 import { Repository } from 'typeorm';
 
 describe('InteraccionARService', () => {

@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
-import { Categoria } from '../categoria/categoria.entity';
+import { Categoria } from '@categoria/categoria.entity';
 
 @Entity()
 export class Hilo {
